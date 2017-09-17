@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "codemirror": "^5.29.0",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "serve": "^6.0.6"
