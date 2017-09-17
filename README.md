@@ -22,7 +22,7 @@ This will clone the repository, install all dependencies and open the workshop e
 **Note that we currently only support Google Chrome latest for this workshop.**
 
 ## Slides
-* [Slides in German (TBD)]()
+* [Slides in German](https://docs.google.com/presentation/d/1BE9CYgMaQDlnoCZMfRj5OvYNtRyMwoyo9BYaWsmBGZ4/edit?usp=sharing)
 
 ## Contributing
 Please make sure that you adhere to our code style, you can validate your changes / PR by executing `npm run lint`.

@@ -57,7 +57,7 @@ Promise.all([
 
 function init() {
   const src = window.location.href + 'index.js';
-  const dist = src.replace('src', 'dist');
+  const dist = src.replace('src', 'dist').replace('/index.js', '.js');
   const playground = document.createElement('div');
 
   playground.setAttribute('id', 'playground');

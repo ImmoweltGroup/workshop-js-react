@@ -2,9 +2,8 @@
 // We are importing React and ReactDOM without a bundler and
 // access the libraries via the `window` object.
 //
-import '/node_modules/react/dist/react.js';
-import '/node_modules/react-dom/dist/react-dom.js';
-const {React, ReactDOM} = window;
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 //
 // Defining a Component is as simple as eating a banana. Nice!
@@ -16,13 +15,13 @@ const HelloWordComponent = props => {
 //
 // Let's execute the function and see how a React Component is structured under the hood!
 //
-const helloWorldReactElement = HelloWordComponent({
+const reactElement = HelloWordComponent({
   name: 'World'
 });
 
 console.log(
   'This is what an rendered React Component looks like under the hood: ',
-  helloWorldReactElement
+  reactElement
 );
 
 //
