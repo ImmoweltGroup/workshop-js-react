@@ -13,7 +13,7 @@ class HelloWordComponent extends Component {
   render() {
     return (
       <div>
-        Hello {this.props.name} in context {this.getSomeContext()}
+        Hello {this.props.name} with {this.getSomeContext()}
       </div>
     );
   }
