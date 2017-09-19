@@ -19,14 +19,47 @@ console.log(
 // Defining a Component is as simple as eating a banana. Nice!
 //
 const HelloWordComponent = props => {
-  //
-  // Everything
-  //
-  return <div>Hello {props.name}</div>;
+  const myDataArray = [{id: 'foo', name: 'Foo'}, {id: 'bar', name: 'Bar'}];
+  return (
+    <div>
+      In JSX you can:
+      <ul>
+        <li>
+          * describe your markup on multiple lines by wrapping the JSX in
+          regular braces.
+        </li>
+        <li>
+          Define so called self-closing elements like in XHTML, e.g. <br /> like
+          this(should be wrapped on a new line)
+        </li>
+        <li>
+          Write regular HTML, except for reserved keyworks in JS like `class` or
+          `for`, in these cases a counterpart can be written, e.g.
+          <ul>
+            <li>class="myClassname" -> className="myClassname"</li>
+            <li>for="myInputIdPointer"` -> `htmlFor="myInputIdPointer"</li>
+          </ul>
+        </li>
+        <li>Evaluate/Execute everything in curly braces `{props.name}`</li>
+        <li>
+          Render:<br />
+          numbers {2 * 2}, <br />
+          strings {'foo'}, <br />
+          React Elements <div>foo bar</div>
+          Arrays of the previous stated data-types, e.g. <br />
+          {myDataArray.map(obj => (
+            // Hint: It is important to specify a `key` in an iteration to enhance Reacts re-render performance(the value must be unique)!
+            <div key={obj.id}>{obj.name}</div>
+          ))}
+        </li>
+        <li>`null` will not be rendered, e.g. {null}</li>
+      </ul>
+    </div>
+  );
 };
 
 //
-// And finally, lets render it to the DOM in the browser.
+// And finally, lets render the Component into the DOM of the browser.
 //
 ReactDOM.render(
   <HelloWordComponent name="world" />,
