@@ -19,6 +19,9 @@ console.log(
 // Defining a Component is as simple as eating a banana. Nice!
 //
 const HelloWordComponent = props => {
+  //
+  // Everything
+  //
   return <div>Hello {props.name}</div>;
 };
 
