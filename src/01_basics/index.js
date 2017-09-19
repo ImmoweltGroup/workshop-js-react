@@ -25,8 +25,8 @@ const HelloWordComponent = props => {
       In JSX you can:
       <ul>
         <li>
-          * describe your markup on multiple lines by wrapping the JSX in
-          regular braces.
+          describe your markup on multiple lines by wrapping the JSX in regular
+          braces.
         </li>
         <li>
           Define so called self-closing elements like in XHTML, e.g. <br /> like
