@@ -7,6 +7,8 @@ import ReactDOM from 'react-dom';
 // 2. Component
 //
 // The first one is either a HTML node or another Component that got executed.
+// The following code will be transpiled under the hood into raw JavaScript, e.g.
+// `React.createElement('div', null, 'Foo')`
 //
 const reactElement = <div>Foo</div>;
 
@@ -16,7 +18,7 @@ console.log(
 );
 
 //
-// Defining a Component is as simple as eating a banana. Nice!
+// The second one is a Component, defining it is as simple as eating a banana. Nice!
 //
 const HelloWordComponent = props => {
   const myDataArray = [{id: 'foo', name: 'Foo'}, {id: 'bar', name: 'Bar'}];
