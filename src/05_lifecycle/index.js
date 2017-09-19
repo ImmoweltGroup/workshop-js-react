@@ -1,15 +1,16 @@
+// @flow
+
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
+
+type PropsType = {
+  name: string
+};
 
 //
 // Defining a Component with Context can be done by using the ES6 class Syntax with the `Component` export from React.
 //
-class HelloWordComponent extends Component {
-  static propTypes = {
-    name: PropTypes.string.isRequired
-  };
-
+class HelloWordComponent extends Component<PropsType> {
   //
   // This method gets executed just before the Component will be rendered into the DOM.
   //

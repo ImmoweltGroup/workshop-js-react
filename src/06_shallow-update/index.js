@@ -1,16 +1,17 @@
+// @flow
+
 import React, {PureComponent} from 'react';
-import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
+
+type PropsType = {
+  name: string
+};
 
 //
 // Writing a `shouldComponentUpdate()` method for each contextful component is tedious,
 // luckily React exposes a `PureComponent` which has built-in shallow comparison support.
 //
-class HelloWordComponent extends PureComponent {
-  static propTypes = {
-    name: PropTypes.string.isRequired
-  };
-
+class HelloWordComponent extends PureComponent<PropsType> {
   render() {
     return <div>Hello {this.props.name}</div>;
   }

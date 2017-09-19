@@ -6,7 +6,8 @@ const PrettyNumberList = props => {
 };
 
 //
-// This will not work, since the Component expects an Array to be present.
+// This will not work, since the Component expects an Array to be present,
+// since we did not define PropTypes you will not get the best developer expirience, so let's define `PropTypes` on the Component!
 //
 const numbersToRender = null;
 
