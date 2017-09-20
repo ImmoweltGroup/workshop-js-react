@@ -6,7 +6,7 @@
 [![Dependency Status](https://david-dm.org/ImmoweltGroup/workshop-js-react.svg)](https://david-dm.org/ImmoweltGroup/workshop-js-react)
 [![devDependency Status](https://david-dm.org/ImmoweltGroup/workshop-js-react/dev-status.svg)](https://david-dm.org/ImmoweltGroup/workshop-js-react#info=devDependencies&view=table)
 
-> The introduction workshop to get up and running in modern JavaScript development.
+> A living workshop around React, JSX and the underlying principles with playground samples for the attendees.
 
 ## Prerequisites
 * A clean installation without a global Node/NPM (we will use NVM so having Node pre-installed might cause problems).
