@@ -1,6 +1,10 @@
 # @immowelt/workshop-js-react
 
 [![Powered by Immowelt](https://img.shields.io/badge/powered%20by-immowelt-yellow.svg?colorB=ffb200)](https://stackshare.io/immowelt-group/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/ImmoweltGroup/workshop-js-react.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/ImmoweltGroup/workshop-js-react.svg?branch=master)](https://travis-ci.org/ImmoweltGroup/workshop-js-react)
+[![Dependency Status](https://david-dm.org/ImmoweltGroup/workshop-js-react.svg)](https://david-dm.org/ImmoweltGroup/workshop-js-react)
+[![devDependency Status](https://david-dm.org/ImmoweltGroup/workshop-js-react/dev-status.svg)](https://david-dm.org/ImmoweltGroup/workshop-js-react#info=devDependencies&view=table)
 
 > The introduction workshop to get up and running in modern JavaScript development.
 
