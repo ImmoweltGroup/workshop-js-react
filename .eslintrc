@@ -1,6 +1,3 @@
 {
-  "extends": "@immowelt/eslint-config-immowelt-react",
-  "globals": {
-    "__ENV_DEV__": true
-  }
+  "extends": "@immowelt/eslint-config-immowelt-react"
 }

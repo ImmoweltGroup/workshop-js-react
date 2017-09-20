@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 //
-// React has two "Primitives",
+// React has two &quot;Primitives&quot;,
 // 1. Element
 // 2. Component
 //
@@ -38,8 +38,14 @@ const HelloWordComponent = props => {
           Write regular HTML, except for reserved keyworks in JS like `class` or
           `for`, in these cases a counterpart can be written, e.g.
           <ul>
-            <li>class="myClassname" -> className="myClassname"</li>
-            <li>for="myInputIdPointer"` -> `htmlFor="myInputIdPointer"</li>
+            <li>
+              class=&quot;myClassname&quot; becomes
+              className=&quot;myClassname&quot;
+            </li>
+            <li>
+              for=&quot;myInputIdPointer&quot; becomes
+              htmlFor=&quot;myInputIdPointer&quot;
+            </li>
           </ul>
         </li>
         <li>Evaluate/Execute everything in curly braces `{props.name}`</li>

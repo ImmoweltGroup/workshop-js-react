@@ -32,9 +32,9 @@ class FooComponent extends Component<*> {
   render() {
     return (
       <div>
-        This component can access the contextType "foo" from above without it
-        being passed explicitly to the FooComponent. The value of contextType
-        "foo" is "{this.context.foo}".
+        This component can access the contextType &quot;foo&quot; from above
+        without it being passed explicitly to the FooComponent. The value of
+        contextType &quot;foo&quot; is &quot;{this.context.foo}&quot;.
       </div>
     );
   }
