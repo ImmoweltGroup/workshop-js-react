@@ -25,8 +25,11 @@ npm start
 This will clone the repository, install all dependencies and open the workshop examples in your Browser. Navigate to the `src/` folder in your opened Browser tab and start taking a look at all of the examples provided.
 **Note that we currently only support Google Chrome latest for this workshop.**
 
-## Slides
+## Additional documentation and information
 * [Slides in German](https://docs.google.com/presentation/d/1BE9CYgMaQDlnoCZMfRj5OvYNtRyMwoyo9BYaWsmBGZ4/edit?usp=sharing)
+* [Official React docs](https://facebook.github.io/react/docs/hello-world.html)
+* [Composition vs Inheritance in React](https://facebook.github.io/react/docs/composition-vs-inheritance.html)
+* [React with Flow](https://flow.org/en/docs/react/components/)
 
 ## Contributing
 Please make sure that you adhere to our code style, you can validate your changes / PR by executing `npm run lint`.
