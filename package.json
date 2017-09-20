@@ -6,9 +6,10 @@
   "license": "MIT",
   "description": "A living workshop around React, JSX and the underlying principles with playground samples for the attendees.",
   "scripts": {
-    "start": "run-p serve build",
+    "start": "run-p serve build:watch",
     "serve": "serve . --open --clipless",
-    "build": "cross-env NODE_ENV=development webpack --watch",
+    "build": "cross-env NODE_ENV=development webpack",
+    "build:watch": "npm run build -- --watch",
     "prettier": "prettier --write 'src/**/*.{js,json}'",
     "precommit": "lint-staged",
     "flow": "flow",
