@@ -29,6 +29,7 @@ This will clone the repository, install all dependencies and open the workshop e
 * [Slides in German](https://docs.google.com/presentation/d/1BE9CYgMaQDlnoCZMfRj5OvYNtRyMwoyo9BYaWsmBGZ4/edit?usp=sharing)
 * [Official React docs](https://facebook.github.io/react/docs/hello-world.html)
 * [Composition vs Inheritance in React](https://facebook.github.io/react/docs/composition-vs-inheritance.html)
+* [Higher Order Components](https://facebook.github.io/react/docs/higher-order-components.html)
 * [React with Flow](https://flow.org/en/docs/react/components/)
 
 ## Contributing
