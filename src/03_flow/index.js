@@ -9,11 +9,11 @@ import ReactDOM from 'react-dom';
 // Under the hood babel also transforms the Flow annotations into PropTypes, so we also see errors in our browser! :-)
 //
 type PropsType = {
-  numbersToRender: Array<number>
+  numbers: Array<number>
 };
 
 const PrettyNumberList = (props: PropsType) => {
-  return <div>{props.numbersToRender.join(', ')}</div>;
+  return <div>{props.numbers.join(', ')}</div>;
 };
 
 //

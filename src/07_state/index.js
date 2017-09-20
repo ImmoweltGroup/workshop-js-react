@@ -37,7 +37,7 @@ class CounterComponent extends Component<PropsType, StateType> {
   handleCountIncrease() {
     // Always use the built-in setState() method, otherwise you do more harm than good to your application!
     this.setState({
-      // Hint: This is error prone due to Reacts async state nature,
+      // Hint: This is error prone due to React's async state nature,
       // in this case we should use the function argument type instead.
       count: this.state.count + 1
     });

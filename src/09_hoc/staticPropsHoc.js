@@ -3,10 +3,10 @@
 import type {ComponentType} from 'react';
 import React from 'react';
 
-export default function createStaticPropsHocWrapper<Props: Object>(
+export default function createStaticPropsWrapper<Props: Object>(
   staticProps: Props
 ) {
-  return function createStaticPropsHoc(
+  return function staticPropsWrapper(
     ComponentToBeWrapped: ComponentType<Props>
   ) {
     if (typeof ComponentToBeWrapped !== 'function') {
@@ -15,10 +15,10 @@ export default function createStaticPropsHocWrapper<Props: Object>(
       );
     }
 
-    const ComponentWithStaticProps = (props: Props) => (
+    const WrappedComponentWithStaticProps = (props: Props) => (
       <ComponentToBeWrapped {...props} {...staticProps} />
     );
 
-    return ComponentWithStaticProps;
+    return WrappedComponentWithStaticProps;
   };
 }

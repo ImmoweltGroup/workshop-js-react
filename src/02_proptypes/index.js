@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const PrettyNumberList = props => {
-  return <div>{props.numbersToRender.join(', ')}</div>;
+  return <div>{props.numbers.join(', ')}</div>;
 };
 
 //

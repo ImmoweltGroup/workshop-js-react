@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import staticProps from './staticPropsHoc.js';
+import createStaticPropsWrapper from './staticPropsHoc.js';
 
 type PropsType = {
   foo: string
@@ -22,9 +22,12 @@ const FooComponent = (props: PropsType) => {
   );
 };
 
-const withProps = staticProps({
+const staticPropsWrapper = createStaticPropsWrapper({
   foo: 'bar'
 });
-const WrappedComponent = withProps(FooComponent);
+const WrappedComponentWithStaticProps = staticPropsWrapper(FooComponent);
 
-ReactDOM.render(<WrappedComponent />, document.getElementById('playground'));
+ReactDOM.render(
+  <WrappedComponentWithStaticProps />,
+  document.getElementById('playground')
+);
