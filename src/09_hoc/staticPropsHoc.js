@@ -7,8 +7,8 @@ export default function createStaticPropsWrapper<Props: Object>(
   staticProps: Props
 ) {
   return function staticPropsWrapper(
-    ComponentToBeWrapped: ComponentType<Props>
-  ) {
+    ComponentToBeWrapped: ComponentType<*>
+  ): ComponentType<Props> {
     if (typeof ComponentToBeWrapped !== 'function') {
       throw new Error(
         'Please provide a Component that will be wrapped to the createStaticPropsHoc() function.'

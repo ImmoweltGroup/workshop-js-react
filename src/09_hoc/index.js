@@ -22,10 +22,10 @@ const FooComponent = (props: PropsType) => {
   );
 };
 
-const staticPropsWrapper = createStaticPropsWrapper({
+const withStaticProps = createStaticPropsWrapper({
   foo: 'bar'
 });
-const WrappedComponentWithStaticProps = staticPropsWrapper(FooComponent);
+const WrappedComponentWithStaticProps = withStaticProps(FooComponent);
 
 ReactDOM.render(
   <WrappedComponentWithStaticProps />,
