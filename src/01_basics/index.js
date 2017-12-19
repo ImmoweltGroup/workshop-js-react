@@ -20,7 +20,7 @@ console.log(
 //
 // The second one is a Component, defining it is as simple as eating a banana. Nice!
 //
-const HelloWordComponent = props => {
+const HelloWorldComponent = props => {
   const myDataArray = [{id: 'foo', name: 'Foo'}, {id: 'bar', name: 'Bar'}];
   return (
     <div>
@@ -70,6 +70,6 @@ const HelloWordComponent = props => {
 // And finally, lets render the Component into the DOM of the browser.
 //
 ReactDOM.render(
-  <HelloWordComponent name="world" />,
+  <HelloWorldComponent name="world" />,
   document.getElementById('playground')
 );
