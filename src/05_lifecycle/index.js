@@ -10,12 +10,12 @@ type PropsType = {
 //
 // Defining a Component with Context can be done by using the ES6 class Syntax with the `Component` export from React.
 //
-class HelloWordComponent extends Component<PropsType> {
+class HelloWorldComponent extends Component<PropsType> {
   //
   // This method gets executed just before the Component will be rendered into the DOM.
   //
   componentWillMount() {
-    console.log('<HelloWordComponent/> componentWillMount');
+    console.log('<HelloWorldComponent/> componentWillMount');
   }
 
   render() {
@@ -26,7 +26,7 @@ class HelloWordComponent extends Component<PropsType> {
   // This method gets executed right after the Component was rendered the first time into the DOM.
   //
   componentDidMount() {
-    console.log('<HelloWordComponent/> componentDidMount');
+    console.log('<HelloWorldComponent/> componentDidMount');
   }
 
   //
@@ -34,7 +34,7 @@ class HelloWordComponent extends Component<PropsType> {
   //
   componentWillReceiveProps(nextProps) {
     console.log(
-      '<HelloWordComponent/> componentWillRecieveProps',
+      '<HelloWorldComponent/> componentWillRecieveProps',
       nextProps,
       this.props
     );
@@ -47,7 +47,7 @@ class HelloWordComponent extends Component<PropsType> {
   //
   shouldComponentUpdate(nextProps, nextState) {
     console.log(
-      '<HelloWordComponent/> shouldComponentUpdate',
+      '<HelloWorldComponent/> shouldComponentUpdate',
       nextProps,
       this.props,
       nextState,
@@ -61,32 +61,32 @@ class HelloWordComponent extends Component<PropsType> {
   // This method gets executed right after the Component re-renders.
   //
   componentWillUpdate() {
-    console.log('<HelloWordComponent/> componentWillUpdate');
+    console.log('<HelloWorldComponent/> componentWillUpdate');
   }
 
   //
   // This method gets executed right after the Component was re-rendered.
   //
   componentDidUpdate() {
-    console.log('<HelloWordComponent/> componentDidUpdate');
+    console.log('<HelloWorldComponent/> componentDidUpdate');
   }
 
   //
   // This method gets executed right before the Component gets removed from the DOM.
   //
   componentWillUnmount() {
-    console.log('<HelloWordComponent/> componentWillUnmount');
+    console.log('<HelloWorldComponent/> componentWillUnmount');
   }
 }
 
 ReactDOM.render(
-  <HelloWordComponent name="world" />,
+  <HelloWorldComponent name="world" />,
   document.getElementById('playground')
 );
 
 setTimeout(() => {
   ReactDOM.render(
-    <HelloWordComponent name="mars" />,
+    <HelloWorldComponent name="mars" />,
     document.getElementById('playground')
   );
 }, 2000);

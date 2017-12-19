@@ -11,7 +11,7 @@ type PropsType = {
 // Defining a Component with Context can be done by using the ES6 class Syntax with the `Component` export from React.
 // Passing in Type-Annotations of Flow for props can be done at the extend level.
 //
-class HelloWordComponent extends Component<PropsType> {
+class HelloWorldComponent extends Component<PropsType> {
   render() {
     return (
       <div>
@@ -26,6 +26,6 @@ class HelloWordComponent extends Component<PropsType> {
 }
 
 ReactDOM.render(
-  <HelloWordComponent name="world" />,
+  <HelloWorldComponent name="world" />,
   document.getElementById('playground')
 );

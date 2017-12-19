@@ -11,13 +11,13 @@ type PropsType = {
 // Writing a `shouldComponentUpdate()` method for each contextful component is tedious,
 // luckily React exposes a `PureComponent` which has built-in shallow comparison support.
 //
-class HelloWordComponent extends PureComponent<PropsType> {
+class HelloWorldComponent extends PureComponent<PropsType> {
   render() {
     return <div>Hello {this.props.name}</div>;
   }
 
   componentDidUpdate() {
-    console.log('<HelloWordComponent/> componentDidUpdate');
+    console.log('<HelloWorldComponent/> componentDidUpdate');
   }
 }
 
@@ -31,7 +31,7 @@ function render(name) {
   count++;
 
   ReactDOM.render(
-    <HelloWordComponent name={name} />,
+    <HelloWorldComponent name={name} />,
     document.getElementById('playground')
   );
 }
